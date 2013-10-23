@@ -1,0 +1,30 @@
+#layout {
+	background-color: #666666;
+	height: auto;
+	width: 900px;
+}
+#adminhead {
+	float: left;
+	height: 100px;
+	width: 850px;
+	background-image: url(../images/headadmin.jpg);
+}
+#adminmenu {
+	float: left;
+	height: 25px;
+	width: 850px;
+	background-image: url(../images/menu.jpg);
+}
+#adminkonten {
+	float: left;
+	height: auto;
+	width: 850px;
+	background-image: url(../images/backgrounrepeat.jpg);
+	background-repeat: repeat;
+}
+#adminfooter {
+	float: left;
+	height: 30px;
+	width: 850px;
+	background-image: url(../images/footer.jpg);
+}

@@ -1,0 +1,10 @@
+#login {
+	background-image: url(../images/backgroundlogin.jpg);
+	background-repeat: no-repeat;
+	height: 200px;
+	width: 250px;
+	padding-right: 35px;
+	padding-left: 35px;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
