@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Tugas Praktikum 2 - Novi Adi</title>
+<style type="text/css">
+<!--
+#Div {
+position:absolute;
+width:200px;
+height:27px;
+z-index:1;
+left: 575px;
+top: 200px;
+}
+.style1 {
+color: blue;
+font-weight: bold;
+}
+-->
+</style>
+</head>
+<body>
+<form method="post" action="tugas_praktikum2.php">
+<h3 align="center" class="style1">DYNAMIC TABLE</h3>
+<table width="327" align="center" border="0" bgcolor="#FFFFFF">
+<tr>
+<td width="121" style="text-align:center"><b>Rows</b></td>
+<td width="196"><strong>:</strong>
+<input name="RowsTotal" type="text" id="RowsTotal" onKeyUp="getmax();" onfocus="this.select();"></td>
+</tr>
+<tr>
+<td style="text-align:center"><label><b>Cols</b></label></td>
+<td><strong>:</strong>
+<input name="ColsTotal" type="text" id="ColsTotal" onKeyUp="getmax();" onfocus="this.select();"></td>
+</tr>
+<tr>
+<td style="text-align:center"><b>Cells</b></td>
+<td><strong>:</strong>
+<input name="CellsTotal" type="text" id="CellsTotal" onKeyUp="getmax();" onFocus="this.select();"></td>
+</tr>
+<tr>
+<td style="text-align:center"><b>Max Cells</b> </td>
+<td><strong>:</strong>
+<input name="maxcells" type="text" id="maxcells" disabled="disabled" style="text-align:center"></td>
+</tr>
+</table>
+<div id="Div">
+<input type="submit" name="Generate" value="Generate">
+<input type="reset" name="Reset" value="Clear Generate">
+</div>
+</form>
+
+<script language="JavaScript" type="text/javascript">
+<!--
+function getmax() {
+var R = parseInt(document.getElementById('RowsTotal').value);
+var C = parseInt(document.getElementById('ColsTotal').value);
+var X = parseInt(document.getElementById('CellsTotal').value);
+var cellmax = document.getElementById('maxcells');
+var total = 'N/A';
+total = R * C;
+cellmax.value = new String(total);
+if (X > total)
+{
+alert('Total Cell Yang Anda Masukkan Terlalu Besar, Nilai Maksimum Cells = ' + total);
+document.getElementById('CellsTotal').value = new String();
+}
+}
+//-->
+</script>
+</body>
+</html>
